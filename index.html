@@ -271,18 +271,33 @@
             </section>
 
             <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+<section class="contact section" id="contact">
+    <h2 class="section-title">Contact</h2>
 
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Submit" class="contact__button button">
-                    </form>
-                </div>
-            </section>
+    <div class="contact__container bd-grid">
+        <form
+            action="https://formspree.io/f/mqkrzoor"
+            method="POST"
+            class="contact__form"
+        >
+            <label>
+                Your name:
+                <input type="text" name="name" placeholder="Name" class="contact__input" required>
+            </label>
+            <label>
+                Your email:
+                <input type="email" name="email" placeholder="Email" class="contact__input" required>
+            </label>
+            <label>
+                Your message:
+                <textarea name="message" placeholder="Message" cols="30" rows="10" class="contact__input" required></textarea>
+            </label>
+            <!-- Add other form fields as needed -->
+
+            <button type="submit" class="contact__button button">Send</button>
+        </form>
+    </div>
+</section>
         </main>
 
         <!--===== FOOTER =====-->
